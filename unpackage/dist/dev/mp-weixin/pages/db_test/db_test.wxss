@@ -1,0 +1,33 @@
+
+.style-content {
+    width: 100%;
+    height: 100%;
+}
+.style-line {
+    width: 100%;
+    height: 75rpx;
+    line-height: 75rpx;
+}
+.style-row {
+    display: flex;
+    flex-direction: row;
+}
+.style-column {
+    display: flex;
+    flex-direction: column;
+}
+.style-half {
+    width: 50%;
+    height: 75rpx;
+}
+.style-one-of-third {
+    width: 33.33%;
+    height: 75rpx;
+    line-height: 75rpx;
+}
+.style-two-of-third {
+    width: 66.67%;
+    height: 75rpx;
+    line-height: 75rpx;
+}
+

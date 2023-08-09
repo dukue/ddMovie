@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tn-notice-bar": "/tuniao-ui/components/tn-notice-bar/tn-notice-bar"
+  },
+  "component": true
+}

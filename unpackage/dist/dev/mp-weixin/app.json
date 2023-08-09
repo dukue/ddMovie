@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tabdetail/tabdetail",
+    "pages/contentt/contentt",
+    "pages/videodetail/videodetail",
+    "pages/user/user",
+    "pages/menu/menu",
+    "pages/typedetail/typedetail",
+    "pages/db_test/db_test",
+    "pages/vHistory/vHistory"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

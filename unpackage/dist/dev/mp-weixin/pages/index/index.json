@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-nav-bar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "contentt": "/pages/contentt/contentt",
+    "status-bar": "/components/statusBar",
+    "search-bar": "/components/searchBar",
+    "tabs-bar": "/components/tabsBar",
+    "bottom-bar": "/components/bottomBar"
+  }
+}

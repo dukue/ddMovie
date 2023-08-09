@@ -1,0 +1,68 @@
+
+.serchbar.data-v-c2b835c0 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imgbox.data-v-c2b835c0 {
+	display: flex;
+	width: 100%;
+}
+.imgbox ._img.data-v-c2b835c0 {
+	width: 40%;
+}
+.imgbox ._h4.data-v-c2b835c0 {
+	margin-top: 20%;
+	margin-left: 10%;
+	color: white;
+	width: 50%;
+	display: inline-block;
+}
+.poptitle.data-v-c2b835c0 {
+	height: 6%;
+	border-bottom: 1px double white;
+}
+.vBox.data-v-c2b835c0 {
+	display: flex;
+	background-color: #3e3e3e;
+	width: 100%;
+}
+.movie-poster.data-v-c2b835c0 {
+	flex: 30%;
+	padding: 10px;
+}
+.movie-poster ._img.data-v-c2b835c0 {
+	border: 1px solid #C1C1C1;
+	box-shadow: 2px 2px 2px #6F6F6F;
+	border-radius: 10%;
+	width: 100%;
+	height: auto;
+}
+.movie-info.data-v-c2b835c0 {
+	overflow: hidden;
+	/* 超出部分隐藏 */
+	flex: 70%;
+	padding: 10px;
+	color: white;
+	border-bottom: 1px solid orangered;
+}
+.movie-title.data-v-c2b835c0 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.movie-actors.data-v-c2b835c0,
+.movie-release.data-v-c2b835c0,
+.movie-director.data-v-c2b835c0 {
+	white-space: nowrap;
+	/* 文本不换行 */
+	margin-top: 15rpx;
+	font-size: 16px;
+}
+.movie-note.data-v-c2b835c0 {
+	padding: 1%;
+	margin-top: 10rpx;
+	display: inline-block;
+	border-radius: 18%;
+	background: #ff5500;
+}
+

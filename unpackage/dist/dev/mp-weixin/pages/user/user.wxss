@@ -1,0 +1,15 @@
+
+.userBox {
+	position: relative;
+}
+.logoimg {
+	margin: 50rpx auto;
+	display: flex;
+	justify-content: center;
+	/* 水平居中 */
+}
+.item-text {
+	font-size: 36rpx;
+	color: white;
+}
+

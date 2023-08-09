@@ -1,0 +1,57 @@
+
+.hbox.data-v-099ebc46 {
+	height: 100vh;
+	background-color: #3e3e3e;
+}
+.title.data-v-099ebc46 {
+	padding: 18rpx;
+	margin: auto 20rpx;
+	color: white;
+	font-size: 36rpx;
+	border-bottom: 0.5rpx double orangered;
+}
+.vBox.data-v-099ebc46 {
+	display: flex;
+	background-color: #3e3e3e;
+	width: 100%;
+}
+.movie-poster.data-v-099ebc46 {
+	flex: 30%;
+	padding: 10px;
+}
+.movie-poster ._img.data-v-099ebc46 {
+	border: 1px solid #C1C1C1;
+	box-shadow: 2px 2px 2px #6F6F6F;
+	border-radius: 10%;
+	width: 100%;
+	height: auto;
+}
+.movie-info.data-v-099ebc46 {
+	overflow: hidden;
+	/* 超出部分隐藏 */
+	flex: 70%;
+	padding: 10px;
+	color: white;
+	border-bottom: 1px solid orangered;
+}
+.movie-title.data-v-099ebc46 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.movie-actors.data-v-099ebc46,
+.movie-release.data-v-099ebc46,
+
+{
+white-space: nowrap;
+/* 文本不换行 */
+margin-top: 15rpx;
+font-size: 16px;
+}
+.movie-note.data-v-099ebc46 {
+	padding: 1%;
+	margin-top: 10rpx;
+	display: inline-block;
+	border-radius: 18%;
+	background: #ff5500;
+}
+

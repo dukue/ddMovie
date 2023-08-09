@@ -1,0 +1,17 @@
+
+.ablock.data-v-368aef34 {
+	display: flex;
+}
+.cateTitle.data-v-368aef34 {
+	width: 20%;
+	color: white;
+	padding: 10rpx;
+}
+.cateDetail.data-v-368aef34 {
+	margin-top: 10%;
+	width: 80%;
+}
+.numBox.data-v-368aef34 {
+	margin: 50rpx auto;
+}
+

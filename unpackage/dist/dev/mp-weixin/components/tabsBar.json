@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tn-tabs": "/tuniao-ui/components/tn-tabs/tn-tabs"
+  },
+  "component": true
+}

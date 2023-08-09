@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-toast": "/tuniao-ui/components/tn-toast/tn-toast",
+    "tn-sticky": "/tuniao-ui/components/tn-sticky/tn-sticky",
+    "tn-read-more": "/tuniao-ui/components/tn-read-more/tn-read-more",
+    "tn-scroll-list": "/tuniao-ui/components/tn-scroll-list/tn-scroll-list",
+    "tn-popup": "/tuniao-ui/components/tn-popup/tn-popup",
+    "tn-grid": "/tuniao-ui/components/tn-grid/tn-grid",
+    "tn-grid-item": "/tuniao-ui/components/tn-grid-item/tn-grid-item"
+  }
+}

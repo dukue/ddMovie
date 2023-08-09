@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-tag": "/tuniao-ui/components/tn-tag/tn-tag",
+    "tn-number-box": "/tuniao-ui/components/tn-number-box/tn-number-box",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button"
+  }
+}

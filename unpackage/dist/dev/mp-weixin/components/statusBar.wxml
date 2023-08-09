@@ -1,0 +1,1 @@
+<tn-notice-bar vue-id="352a7fa0-1" list="{{messList}}" mode="vertical" speed="{{140}}" backgroundColor="tn-bg-red" fontColor="#FFFFFF" bind:__l="__l"></tn-notice-bar>

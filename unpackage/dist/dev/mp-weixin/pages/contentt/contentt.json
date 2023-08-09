@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-load-more": "/tuniao-ui/components/tn-load-more/tn-load-more",
+    "tabdetail": "/pages/tabdetail/tabdetail",
+    "vmenu": "/pages/menu/menu",
+    "user-info": "/pages/user/user"
+  }
+}

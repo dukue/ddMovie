@@ -1,0 +1,102 @@
+
+.grid-bg.data-v-305affd8 {
+	background-color: #3d3d3d;
+}
+.card.data-v-305affd8 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	margin-left: 10rpx;
+	position: relative;
+}
+.card.data-v-305affd8:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+._img.data-v-305affd8 {
+	height: 360rpx;
+	border-radius: 5px 5px 0 0;
+}
+.container.data-v-305affd8 {
+	overflow: hidden;
+	/* 超出部分隐藏 */
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 10rpx;
+}
+.container ._h4.data-v-305affd8 {
+	white-space: nowrap;
+	/* 文本不换行 */
+}
+.content1.data-v-305affd8 {
+	background-color: #3e3e3e;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.tagBox.data-v-305affd8 {
+	overflow: hidden;
+	margin-top: 10rpx;
+	display: flex;
+}
+.tnTag.data-v-305affd8 {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 48%;
+}
+
+
+.ablock.data-v-368aef34 {
+	display: flex;
+}
+.cateTitle.data-v-368aef34 {
+	width: 20%;
+	color: white;
+	padding: 10rpx;
+}
+.cateDetail.data-v-368aef34 {
+	margin-top: 10%;
+	width: 80%;
+}
+.numBox.data-v-368aef34 {
+	margin: 50rpx auto;
+}
+
+
+.userBox {
+	position: relative;
+}
+.logoimg {
+	margin: 50rpx auto;
+	display: flex;
+	justify-content: center;
+	/* 水平居中 */
+}
+.item-text {
+	font-size: 36rpx;
+	color: white;
+}
+
+
+.ttop {
+	height: 66rpx;
+}
+
+
+.body {
+	min-height: 100vh;
+	position: relative;
+	background-color: #3e3e3e;
+}
+
+
+/* 标题 */
+.bar-title {
+	text-align: center;
+	margin: auto;
+}
+.status_bar {
+	height: 25px;
+	width: 100%;
+}
+

@@ -1,0 +1,1 @@
+<view class="tabsbar data-v-549a85ca"><tn-tabs vue-id="3eb6b47c-1" fontSize="{{36}}" list="{{tabList}}" isScroll="{{true}}" current="{{current}}" inactiveColor="#ffffff" activeColor="#ff0000" name="tab-name" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" class="data-v-549a85ca" bind:__l="__l"></tn-tabs></view>

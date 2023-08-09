@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-popup": "/tuniao-ui/components/tn-popup/tn-popup",
+    "tn-list-cell": "/tuniao-ui/components/tn-list-cell/tn-list-cell"
+  },
+  "component": true
+}

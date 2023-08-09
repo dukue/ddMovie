@@ -1,0 +1,1 @@
+<tn-tabbar bind:input="__e" vue-id="c8057d2e-1" beforeSwitch="{{beforeSwitch}}" bg-color="#3d3d3d" activeColor="#ffffff" activeIconColor="tn-cool-bg-color-15" list="{{tabbarList}}" value="{{currentIndex}}" data-event-opts="{{[['^input',[['__set_model',['','currentIndex','$event',[]]]]]]}}" bind:__l="__l"></tn-tabbar>
