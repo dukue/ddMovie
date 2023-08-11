@@ -1,6 +1,7 @@
 <template>
 	<view class="userBox">
-		<tn-avatar size="xl" class="logoimg" src="xxx.jpg"></tn-avatar>
+		<tn-toast ref="toast"></tn-toast>
+		<tn-avatar size="xl" class="logoimg" backgroundColor="#3e3e3e" src="http://124.223.107.207/Upload/logo.png"></tn-avatar>
 		<tn-list-view :card="true">
 			<block v-for="(item, index) in listitem" :key="index">
 				<tn-list-cell @click="handclick(index)" :fontSize=48 :hover=true padding="38rpx 28rpx"
@@ -17,6 +18,7 @@
 				</view>
 			</view>
 		</tn-modal>
+			<p style="text-align: center;color:gainsboro; margin-top: 20px;">丁丁影视V1.0.0</p>
 	</view>
 </template>
 
@@ -59,6 +61,30 @@
 				}
 				else if (index == 2) {
 					this.show = true
+				}
+				else if (index == 3){
+					this.$refs.toast.show({
+						title: '',
+						content: '未完善',
+						icon: 'error',
+						duration: 1500
+					})
+				}
+				else if (index == 4){
+					this.$refs.toast.show({
+						title: '',
+						content: '未完善',
+						icon: 'error',
+						duration: 1500
+					})
+				}
+				else if (index == 5){
+					this.$refs.toast.show({
+						title: '',
+						content: 'beta测试版，无需更新！',
+						icon: 'fail',
+						duration: 1500
+					})
 				}
 			},
 		},

@@ -113,9 +113,11 @@
 			bottomBar,
 		},
 		onReady() {
+			// #ifdef APP-PLUS
 			this.openDatabase();
 			this.createTable();
 			this.createCollectionTable();
+			// #endif
 		},
 		onReachBottom() {
 			let par = this.$refs.load.$refs.sload

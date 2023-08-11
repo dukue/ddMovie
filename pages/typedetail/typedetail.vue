@@ -1,5 +1,7 @@
 <template>
 	<view>
+		<uni-nav-bar height="100rpx" @clickLeft="back" :statusBar="true" :fixed="true" leftIcon="undo" :title="typeTitle"
+			dark></uni-nav-bar>
 		<tn-grid align="left" :col="col" class="grid-bg content1">
 			<block v-for="(item, index) in vList" :key="index">
 				<!-- 电影卡片 -->
@@ -39,6 +41,7 @@
 				end: 15,
 				vtype: false,
 				flag: true,
+				typeTitle: "",
 				loadText: {
 					loadmore: '下拉加载',
 					loading: '快速加载中……',
@@ -49,6 +52,11 @@
 			}
 		},
 		methods: {
+			back() {
+				uni.navigateBack({
+					delta: 1
+				})
+			},
 			async getType(tid, begin, end) {
 				const res = await this.$myRequest({
 					url: '/video/getAllMovie1',
@@ -82,9 +90,11 @@
 		onLoad(options) {
 			if (options.year !== undefined) {
 				this.vtype = true;
+				this.typeTitle = options.year + "年上映";
 				this.year = options.year;
-				this.getYear(this.year, this.begin, this.end)
+				this.getYear(this.year, this.begin, this.end);
 			} else {
+				this.typeTitle = options.name;
 				this.tid = options.tid;
 				this.getType(this.tid, this.begin, this.end);
 			}
@@ -99,9 +109,9 @@
 			this.begin += 15;
 			this.end += 15;
 			this.status = "loading";
-			if (this.vtype==true) {
+			if (this.vtype == true) {
 				this.getYear(this.year, this.begin, this.end);
-			}else{
+			} else {
 				this.getType(this.tid, this.begin, this.end);
 			}
 		}

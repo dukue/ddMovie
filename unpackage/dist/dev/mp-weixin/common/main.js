@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(uni) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -115,7 +115,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _default = {
   onLaunch: function onLaunch() {
-    console.log('App Launch');
+    var res = this.$myRequest({
+      url: "/video/getVersion"
+    });
+    res.then(function (result) {
+      if ('1.0.0' == result.data) {
+        uni.showToast({
+          title: "已是最新版本",
+          duration: 1500
+        });
+      }
+    });
+    return res.data;
   },
   onShow: function onShow() {
     console.log('App Show');
@@ -125,6 +136,7 @@ var _default = {
   }
 };
 exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
 

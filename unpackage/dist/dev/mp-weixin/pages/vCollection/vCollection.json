@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-grid": "/tuniao-ui/components/tn-grid/tn-grid"
+  }
+}

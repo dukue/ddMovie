@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/tabdetail/tabdetail"],{
 
-/***/ 108:
+/***/ 115:
 /*!******************************************************************************************************!*\
   !*** C:/Users/dk/Documents/HBuilderProjects/Dmovie/main.js?{"page":"pages%2Ftabdetail%2Ftabdetail"} ***!
   \******************************************************************************************************/
@@ -101,10 +101,10 @@ var components
 try {
   components = {
     tnGrid: function () {
-      return __webpack_require__.e(/*! import() | tuniao-ui/components/tn-grid/tn-grid */ "tuniao-ui/components/tn-grid/tn-grid").then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-grid/tn-grid.vue */ 182))
+      return __webpack_require__.e(/*! import() | tuniao-ui/components/tn-grid/tn-grid */ "tuniao-ui/components/tn-grid/tn-grid").then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-grid/tn-grid.vue */ 213))
     },
     tnTag: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-tag/tn-tag */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-tag/tn-tag")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-tag/tn-tag.vue */ 189))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-tag/tn-tag */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-tag/tn-tag")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-tag/tn-tag.vue */ 220))
     },
   }
 } catch (e) {
@@ -327,5 +327,5 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-},[[108,"common/runtime","common/vendor"]]]);
+},[[115,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/tabdetail/tabdetail.js.map

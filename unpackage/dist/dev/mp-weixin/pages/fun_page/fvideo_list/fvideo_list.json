@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-pagination": "/uni_modules/uni-pagination/components/uni-pagination/uni-pagination",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button"
+  }
+}

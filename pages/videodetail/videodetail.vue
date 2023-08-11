@@ -1,11 +1,13 @@
 <template>
 	<view class="vd-bg">
+		<uni-nav-bar height="100rpx" :title="video.vName" shadow color="#bcbcbc"
+			background-color="#000000"></uni-nav-bar>
 		<tn-toast ref="toast"></tn-toast>
 		<!-- 播放器 -->
 		<tn-sticky>
-			<video id="myVideo" @timeupdate="videoTimeUpdateEvent($event)" @ended="autoNext()"
-				:vslide-gesture-in-fullscreen=true :title='title' :initial-time="playTime" :autoplay=true
-				class="myvideo" :src="Videosrc" controls></video>
+			<video id="myVideo" @fullscreenclick="controltag()" @timeupdate="videoTimeUpdateEvent($event)"
+				@ended="autoNext()" :vslide-gesture-in-fullscreen=true :title='title' :initial-time="playTime"
+				:autoplay=true class="myvideo" :src="Videosrc" :controls="controlshow"></video>
 		</tn-sticky>
 		<!-- 视频信息 -->
 		<div class="container">
@@ -86,6 +88,7 @@
 				ctext: "收藏",
 				cicon: "tn-icon-star",
 				collectionName: 'collection',
+				controlshow: true,
 				shadow: {
 					backgroundImage: "linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%,rgba(231, 231, 231, 0.5) 80%)",
 					paddingTop: "200rpx",
@@ -100,8 +103,15 @@
 			}
 		},
 		methods: {
+			controltag() {
+				if (this.controlshow == false) {
+					this.controlshow = true;
+				} else {
+					this.controlshow = false;
+				}
+			},
 			videoTimeUpdateEvent(e) { // 播放进度改变
-				this.playTime = e.detail.currentTime
+				this.playTime = e.detail.currentTime;
 				this.allTime = e.detail.duration
 			},
 			autoNext() {
@@ -273,6 +283,12 @@
 					sql: selectSql,
 					success: (res) => {
 						if (res.length !== 0) {
+							uni.showLoading({
+								title: '定位到上次播放位置' + res[0].time,
+							});
+							setTimeout(function() {
+								uni.hideLoading();
+							}, 2000);
 							this.playTime = res[0].time;
 							this.activeIndex = res[0].aindex;
 							this.Videosrc = this.playdata[this.activeIndex].link;
@@ -318,9 +334,9 @@
 					this.playdata = larry;
 					this.Videosrc = larry[0].link;
 					this.title = larry[0].Num;
+					this.querryHistoryData();
 				})
 			this.querryTargetData();
-			this.querryHistoryData();
 		},
 		onReady() {
 			this.$nextTick(() => {
@@ -343,7 +359,7 @@
 		position: relative;
 		height: 100vh;
 		width: 100%;
-		background-color: #9a6161;
+		background-color: #3e3e3e;
 	}
 
 	.container {

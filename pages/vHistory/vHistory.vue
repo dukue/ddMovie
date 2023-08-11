@@ -35,6 +35,7 @@
 				title: '清空历史记录',
 				ifnull: false,
 				content: '确定要清空所有记录吗？',
+				vpercent:"0",
 				button: [{
 						text: '取消',
 						backgroundColor: '#E6E6E6',

@@ -43,6 +43,17 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
@@ -64,7 +75,8 @@ var _default = {
       }, {
         icon: "tn-icon-windmill",
         text: "检查更新"
-      }]
+      }],
+      show: false
     };
   },
   methods: {
@@ -72,6 +84,33 @@ var _default = {
       if (index == 0) {
         uni.navigateTo({
           url: "/pages/vHistory/vHistory"
+        });
+      } else if (index == 1) {
+        uni.navigateTo({
+          url: "/pages/vCollection/vCollection"
+        });
+      } else if (index == 2) {
+        this.show = true;
+      } else if (index == 3) {
+        this.$refs.toast.show({
+          title: '',
+          content: '未完善',
+          icon: 'error',
+          duration: 1500
+        });
+      } else if (index == 4) {
+        this.$refs.toast.show({
+          title: '',
+          content: '未完善',
+          icon: 'error',
+          duration: 1500
+        });
+      } else if (index == 5) {
+        this.$refs.toast.show({
+          title: '',
+          content: 'beta测试版，无需更新！',
+          icon: 'fail',
+          duration: 1500
         });
       }
     }
@@ -111,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 118:
+/***/ 125:
 /*!********************************************************************************************!*\
   !*** C:/Users/dk/Documents/HBuilderProjects/Dmovie/main.js?{"page":"pages%2Fuser%2Fuser"} ***!
   \********************************************************************************************/
@@ -211,14 +250,20 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
+    tnToast: function () {
+      return __webpack_require__.e(/*! import() | tuniao-ui/components/tn-toast/tn-toast */ "tuniao-ui/components/tn-toast/tn-toast").then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-toast/tn-toast.vue */ 241))
+    },
     tnAvatar: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-avatar/tn-avatar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-avatar/tn-avatar")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-avatar/tn-avatar.vue */ 210))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-avatar/tn-avatar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-avatar/tn-avatar")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-avatar/tn-avatar.vue */ 248))
     },
     tnListView: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-list-view/tn-list-view */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-list-view/tn-list-view")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-list-view/tn-list-view.vue */ 217))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-list-view/tn-list-view */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-list-view/tn-list-view")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-list-view/tn-list-view.vue */ 255))
     },
     tnListCell: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-list-cell/tn-list-cell */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-list-cell/tn-list-cell")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-list-cell/tn-list-cell.vue */ 224))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-list-cell/tn-list-cell */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-list-cell/tn-list-cell")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-list-cell/tn-list-cell.vue */ 262))
+    },
+    tnModal: function () {
+      return Promise.all(/*! import() | tuniao-ui/components/tn-modal/tn-modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-modal/tn-modal")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-modal/tn-modal.vue */ 269))
     },
   }
 } catch (e) {
@@ -251,5 +296,5 @@ render._withStripped = true
 
 /***/ })
 
-},[[118,"common/runtime","common/vendor"]]]);
+},[[125,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/user/user.js.map

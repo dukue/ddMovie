@@ -8,7 +8,11 @@
     "pages/menu/menu",
     "pages/typedetail/typedetail",
     "pages/db_test/db_test",
-    "pages/vHistory/vHistory"
+    "pages/vHistory/vHistory",
+    "pages/vCollection/vCollection",
+    "pages/fun_page/fun_page",
+    "pages/fun_page/fvideo_list/fvideo_list",
+    "pages/fun_page/fvideo_detail/fvideo_detail"
   ],
   "subPackages": [],
   "window": {

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-sticky": "/tuniao-ui/components/tn-sticky/tn-sticky"
+  }
+}

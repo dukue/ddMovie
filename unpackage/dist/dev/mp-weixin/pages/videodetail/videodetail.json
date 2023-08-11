@@ -1,7 +1,9 @@
 {
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
   "usingComponents": {
+    "uni-nav-bar": "/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
     "tn-toast": "/tuniao-ui/components/tn-toast/tn-toast",
     "tn-sticky": "/tuniao-ui/components/tn-sticky/tn-sticky",
     "tn-read-more": "/tuniao-ui/components/tn-read-more/tn-read-more",

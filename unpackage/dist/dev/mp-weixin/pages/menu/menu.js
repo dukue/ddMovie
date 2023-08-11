@@ -1,6 +1,6 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/menu/menu"],{
 
-/***/ 119:
+/***/ 126:
 /*!********************************************************************************************!*\
   !*** C:/Users/dk/Documents/HBuilderProjects/Dmovie/main.js?{"page":"pages%2Fmenu%2Fmenu"} ***!
   \********************************************************************************************/
@@ -101,13 +101,13 @@ var components
 try {
   components = {
     tnTag: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-tag/tn-tag */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-tag/tn-tag")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-tag/tn-tag.vue */ 189))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-tag/tn-tag */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-tag/tn-tag")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-tag/tn-tag.vue */ 220))
     },
     tnNumberBox: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-number-box/tn-number-box */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-number-box/tn-number-box")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-number-box/tn-number-box.vue */ 196))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-number-box/tn-number-box */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-number-box/tn-number-box")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-number-box/tn-number-box.vue */ 227))
     },
     tnButton: function () {
-      return Promise.all(/*! import() | tuniao-ui/components/tn-button/tn-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-button/tn-button")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-button/tn-button.vue */ 203))
+      return Promise.all(/*! import() | tuniao-ui/components/tn-button/tn-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("tuniao-ui/components/tn-button/tn-button")]).then(__webpack_require__.bind(null, /*! @/tuniao-ui/components/tn-button/tn-button.vue */ 234))
     },
   }
 } catch (e) {
@@ -315,9 +315,21 @@ var _default = {
         url: "/pages/typedetail/typedetail?year=" + year
       });
     },
-    test: function test() {
-      uni.navigateTo({
-        url: "/pages/db_test/db_test"
+    querryAllData: function querryAllData() {
+      var _this = this;
+      var selectSql = "select * from history";
+      console.log(selectSql);
+      // 注意这里使用的是 selectSql，不是 executeSql
+      plus.sqlite.selectSql({
+        name: "vhistory",
+        sql: selectSql,
+        success: function success(res) {
+          console.log(res);
+        },
+        fail: function fail(e) {
+          console.log(e);
+          _this.log = '查询数据失败';
+        }
       });
     }
   },
@@ -360,5 +372,5 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-},[[119,"common/runtime","common/vendor"]]]);
+},[[126,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/menu/menu.js.map

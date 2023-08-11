@@ -78,6 +78,41 @@
 }
 
 
+.card.data-v-617c2134 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	margin-left: 10rpx;
+	position: relative;
+}
+.card.data-v-617c2134:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+._img.data-v-617c2134 {
+	height: 360rpx;
+	border-radius: 5px 5px 0 0;
+}
+.container.data-v-617c2134 {
+	overflow: hidden;
+	/* 超出部分隐藏 */
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 10rpx;
+}
+.container ._h4.data-v-617c2134 {
+	white-space: nowrap;
+	/* 文本不换行 */
+}
+.content1.data-v-617c2134 {
+	margin-top: 10rpx;
+	background-color: #3e3e3e;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
 .ttop {
 	height: 66rpx;
 }

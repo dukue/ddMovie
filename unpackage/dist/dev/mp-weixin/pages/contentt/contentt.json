@@ -5,6 +5,7 @@
     "tn-load-more": "/tuniao-ui/components/tn-load-more/tn-load-more",
     "tabdetail": "/pages/tabdetail/tabdetail",
     "vmenu": "/pages/menu/menu",
-    "user-info": "/pages/user/user"
+    "user-info": "/pages/user/user",
+    "funpage": "/pages/fun_page/fun_page"
   }
 }

@@ -6,7 +6,7 @@
 .title.data-v-099ebc46 {
 	padding: 18rpx;
 	margin: auto 20rpx;
-	color: white;
+	color: #ffa6a6;
 	font-size: 36rpx;
 	border-bottom: 0.5rpx double orangered;
 }
@@ -14,6 +14,16 @@
 	display: flex;
 	background-color: #3e3e3e;
 	width: 100%;
+}
+.imgbox.data-v-099ebc46 {
+	display: flex;
+	width: 100%;
+}
+.imgbox ._h2.data-v-099ebc46 {
+	margin-top: 50%;
+	margin-left: 20%;
+	color: white;
+	display: inline-block;
 }
 .movie-poster.data-v-099ebc46 {
 	flex: 30%;
@@ -35,23 +45,29 @@
 	border-bottom: 1px solid orangered;
 }
 .movie-title.data-v-099ebc46 {
-	font-size: 18px;
+	white-space: nowrap;
+	/* 文本不换行 */
+	color: #ffe2af;
+	font-size: 21px;
 	font-weight: bold;
+	margin-bottom: 20rpx;
 }
-.movie-actors.data-v-099ebc46,
-.movie-release.data-v-099ebc46,
-
-{
-white-space: nowrap;
-/* 文本不换行 */
-margin-top: 15rpx;
-font-size: 16px;
+.movie-time.data-v-099ebc46 {
+	white-space: nowrap;
+	/* 文本不换行 */
+	font-size: 15px;
+	margin-bottom: 20rpx;
 }
-.movie-note.data-v-099ebc46 {
-	padding: 1%;
-	margin-top: 10rpx;
-	display: inline-block;
-	border-radius: 18%;
-	background: #ff5500;
+.movie-vnum.data-v-099ebc46 {
+	white-space: nowrap;
+	/* 文本不换行 */
+	font-size: 15px;
+	margin-bottom: 20rpx;
+}
+.movie-release.data-v-099ebc46 {
+	white-space: nowrap;
+	/* 文本不换行 */
+	font-size: 15px;
+	margin-bottom: 20rpx;
 }
 
